@@ -1,0 +1,127 @@
+{
+    "questions": [
+        {
+            "text": "Wie oft nutzt du öffentliche Verkehrsmittel oder fährst Fahrrad statt Auto?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Nie",
+                    "value": 1
+                },
+                {
+                    "text": "Selten",
+                    "value": 2
+                },
+                {
+                    "text": "Manchmal",
+                    "value": 3
+                },
+                {
+                    "text": "Oft",
+                    "value": 4
+                },
+                {
+                    "text": "Immer",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "text": "Welche Verkehrsmittel nutzt du regelmäßig?",
+            "type": "checkbox",
+            "options": [
+                {
+                    "text": "Auto (Benzin/Diesel)",
+                    "value": 1
+                },
+                {
+                    "text": "Elektroauto",
+                    "value": 2
+                },
+                {
+                    "text": "Fahrrad / Zu Fuß",
+                    "value": 3
+                },
+                {
+                    "text": "Öffentliche Verkehrsmittel",
+                    "value": 4
+                },
+                {
+                    "text": "Flugzeug (mehrmals im Jahr)",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "text": "Wie häufig isst du tierische Produkte (Fleisch, Milch, Eier)?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Täglich",
+                    "value": 4
+                },
+                {
+                    "text": "Mehrmals pro Woche",
+                    "value": 3
+                },
+                {
+                    "text": "Selten",
+                    "value": 2
+                },
+                {
+                    "text": "Nie (vegan)",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "text": "Wie wird dein Zuhause hauptsächlich beheizt?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Gas / Öl",
+                    "value": 4
+                },
+                {
+                    "text": "Fernwärme",
+                    "value": 3
+                },
+                {
+                    "text": "Wärmepumpe / Strom",
+                    "value": 2
+                },
+                {
+                    "text": "Erneuerbare Energie (Solar, Holz, etc.)",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "text": "Berechne dein Ergebnis",
+            "type": "result_button"
+        }
+    ],
+    "answers": [
+        {
+            "percentage": 0,
+            "text": "Dein CO₂-Fußabdruck ist sehr gering – du lebst klimafreundlich und nachhaltig. Weiter so!"
+        },
+        {
+            "percentage": 25,
+            "text": "Du hast einen unterdurchschnittlichen CO₂-Fußabdruck – kleine Anpassungen könnten ihn weiter verbessern."
+        },
+        {
+            "percentage": 50,
+            "text": "Dein CO₂-Fußabdruck ist durchschnittlich – du kannst durch bewusstere Entscheidungen beim Reisen und Essen viel bewirken."
+        },
+        {
+            "percentage": 75,
+            "text": "Dein CO₂-Fußabdruck ist überdurchschnittlich – prüfe, wo du Energie und Ressourcen einsparen kannst."
+        },
+        {
+            "percentage": 100,
+            "text": "Dein CO₂-Fußabdruck ist sehr hoch – es gibt großes Potenzial, deinen Lebensstil klimafreundlicher zu gestalten."
+        }
+    ],
+    "alert" : "Du bist gay."
+}
