@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klima-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+
+    <div>
+        <button id="play">Spiele/Pausiere die Ballade</button><br><br>
+        <input type="range" name="Zeit" id="Zeit" step="1" oninput="setAudioTime()">
+        <label for="Zeit" id="zeitLabel">0:00</label><br><br>
+
+        <button id="speed_change">1x</button>
+    </div>
+
+    <div class="top-right-controls"> <select id="colorSelector">
+            <option value="#fe2712">Red</option>
+            <option value="#fbf203">Yellow</option>
+            <option value="#0247fe">Blue</option>
+            <option value="#66b032">Green</option>
+            <option value="#ff7f00">Orange</option>
+            <option value="#800080">Purple</option>
+
+            <option value="#000000">Black</option>
+            <option value="#ffffff">White</option>
+            <option value="#00ffff">Cyan</option>
+            <option value="#ff00ff">Magenta</option>
+        </select> </div>
+
+    <dialog id="myDialog">
+        <form method="dialog">
+            <p id="dialogText"></p>
+            <button>Close</button>
+        </form>
+    </dialog>
+
+</body>
+<script src="audio.js"></script>
+<script src="switch_style.js"></script>
+<script src="templates.js"></script>
+<script src="json_read.js"></script>
+
+</html>

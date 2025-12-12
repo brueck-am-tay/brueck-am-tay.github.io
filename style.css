@@ -1,0 +1,314 @@
+/* ======================================================
+   🌈 UNIVERSAL COLOR VARIABLES (EDIT ONLY THIS)
+====================================================== */
+:root {
+  --theme: #1f5fa1; /* MAIN theme color */
+  
+  /* auto-generated helper shades */
+  --theme-light: color-mix(in srgb, var(--theme) 35%, white);
+  --theme-lighter: color-mix(in srgb, var(--theme) 55%, white);
+
+  --theme-dark: color-mix(in srgb, var(--theme) 40%, black);
+  --theme-darker: color-mix(in srgb, var(--theme) 65%, black);
+
+  --theme-accent: color-mix(in srgb, var(--theme) 75%, white);
+  --theme-accent-strong: color-mix(in srgb, var(--theme) 95%, white);
+
+  --text-light: #e8f4ff;
+  --text-strong: #d9e8ff;
+
+  --shadow: rgba(0, 0, 40, 0.35);
+  --shadow-strong: rgba(0, 0, 60, 0.45);
+}
+
+
+/* ======================================================
+   🌈 GLOBAL THEME BACKGROUND
+====================================================== */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--theme-darker),
+    var(--theme-dark),
+    var(--theme)
+  );
+  color: var(--text-light);
+  padding: 30px;
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: themeShift 18s ease infinite;
+  transition: background 0.6s ease, color 0.4s ease;
+}
+
+@keyframes themeShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ======================================================
+   🌈 THEMED DIVS (CARDS)
+====================================================== */
+div {
+  background: linear-gradient(145deg, var(--theme-dark), var(--theme));
+  padding: 20px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.7s;
+}
+
+div:hover::before {
+  left: 125%;
+}
+
+div:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 40px var(--shadow-strong);
+}
+
+
+/* ======================================================
+   🌈 TOP RIGHT CONTROLS — THEMED
+====================================================== */
+.top-right-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.top-right-controls button {
+  background: linear-gradient(135deg, var(--theme), var(--theme-dark));
+  color: var(--text-light);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px var(--shadow);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.top-right-controls button:hover {
+  background: linear-gradient(135deg, var(--theme-light), var(--theme));
+  transform: translateY(-2px);
+}
+
+
+/* ======================================================
+   🌈 RANGE INPUT
+====================================================== */
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+input[type="range"] {
+  flex: 1;
+  appearance: none;
+  height: 6px;
+  background: linear-gradient(90deg, var(--theme-dark), var(--theme));
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="range"]:hover {
+  box-shadow: 0 0 12px var(--theme-accent);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--theme-accent);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--theme-accent);
+  transition: transform 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+
+/* ======================================================
+   🌈 BUTTONS (GLOBAL)
+====================================================== */
+button {
+  background: linear-gradient(135deg, var(--theme), var(--theme-dark));
+  color: var(--text-strong);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent);
+  transition: 0.6s;
+}
+
+button:hover::after {
+  left: 100%;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+
+/* ======================================================
+   🌈 RESULT CONTAINER
+====================================================== */
+.result-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 40px 50px;
+  background: color-mix(in srgb, var(--theme-dark) 60%, black);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  box-shadow: 0 12px 35px var(--shadow);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--theme-accent);
+  border: 1px solid color-mix(in srgb, var(--theme-accent) 30%, white);
+}
+
+.result-container img {
+  max-width: 100%;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.result-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 28px var(--theme-accent);
+}
+
+
+/* ======================================================
+   🌈 THEMED dialog + ALL CHILDREN
+====================================================== */
+dialog, dialog * {
+  background: none;
+  color: var(--text-light);
+  font-family: inherit;
+}
+
+dialog {
+  background: linear-gradient(145deg, var(--theme-dark), var(--theme));
+  border: 1px solid color-mix(in srgb, var(--theme) 30%, white);
+  box-shadow: 0 12px 35px var(--shadow);
+  border-radius: 18px;
+  padding: 30px 40px;
+  width: 360px;
+  max-width: 90%;
+  animation: fadeInDialog 0.35s ease-out;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+}
+
+dialog button {
+  background: linear-gradient(135deg, var(--theme), var(--theme-dark));
+}
+
+dialog button:hover {
+  background: linear-gradient(135deg, var(--theme-light), var(--theme));
+}
+
+
+/* ======================================================
+   🌈 THEMED SELECT DROPDOWN
+====================================================== */
+select {
+  background: var(--theme-dark);
+  color: var(--text-light);
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--theme-accent);
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px var(--shadow);
+  transition: 0.3s ease;
+}
+
+select:hover {
+  background: var(--theme);
+  box-shadow: 0 6px 20px var(--shadow-strong);
+}
+
+option {
+  background: var(--theme-dark);
+  color: var(--text-light);
+}
+
+
+/* ======================================================
+   🌈 THEMED #container > * (children)
+====================================================== */
+#container > * {
+  background: linear-gradient(145deg, var(--theme-dark), var(--theme));
+  color: var(--text-light);
+  border-radius: 14px;
+  padding: 16px 22px;
+  border: 1px solid color-mix(in srgb, var(--theme-accent) 25%, white);
+  box-shadow: 0 8px 22px var(--shadow);
+  transition: 0.3s ease;
+}
+
+#container > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px var(--shadow-strong);
+}
+
+
+/* ======================================================
+   🌈 ANIMATIONS
+====================================================== */
+@keyframes fadeInDialog {
+  from { opacity: 0; transform: translateY(-15px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
