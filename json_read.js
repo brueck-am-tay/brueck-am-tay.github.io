@@ -1,4 +1,4 @@
-fetch('https://co2-fussabdruck.github.io/data.json')
+fetch('data.json')
     .then((response) => response.json())
     .then((json) => {
         console.log("xxx", json)
