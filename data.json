@@ -5,20 +5,64 @@
             "type": "radio",
             "options": [
                 {
-                    "text": "Um eine Liebesgeschichte zweier Reisender",
-                    "value": -2
+                    "text": "Eine Liebesgeschichte",
+                    "value": 0
                 },
                 {
-                    "text": "Um den Einsturz einer Eisenbahnbrücke während eines Sturms",
+                    "text": "Der Einsturz einer Eisenbahnbrücke während eines Sturms",
                     "value": 4
                 },
                 {
-                    "text": "Um den Bau einer Brücke im 19. Jahrhundert",
-                    "value": -1
+                    "text": "Der Bau einer Brücke",
+                    "value": 1
                 },
                 {
-                    "text": "Um einen erfolgreichen technischen Fortschritt",
-                    "value": -3
+                    "text": "Ein technischer Triumph",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Wo spielt die Handlung der Ballade?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "In Deutschland",
+                    "value": 0
+                },
+                {
+                    "text": "In England",
+                    "value": 0
+                },
+                {
+                    "text": "In Schottland am Fluss Tay",
+                    "value": 4
+                },
+                {
+                    "text": "In Frankreich",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Zu welcher Tages- bzw. Nachtzeit ereignet sich das Unglück?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Am frühen Morgen",
+                    "value": 0
+                },
+                {
+                    "text": "Am hellen Tag",
+                    "value": 0
+                },
+                {
+                    "text": "In der Nacht",
+                    "value": 4
+                },
+                {
+                    "text": "Am Nachmittag",
+                    "value": 1
                 }
             ]
         },
@@ -31,60 +75,258 @@
                     "value": 2
                 },
                 {
-                    "text": "Naturgewalten, die personifiziert werden",
+                    "text": "Personifizierte Naturgewalten",
                     "value": 2
                 },
                 {
-                    "text": "Götter aus der Antike",
+                    "text": "Antike Götter",
                     "value": -2
                 },
                 {
-                    "text": "Geisterstimmen",
+                    "text": "Unheimliche Stimmen",
                     "value": 2
                 }
             ]
         },
         {
-            "text": "Welche Rolle spielt der Sturm in der Ballade?",
+            "text": "Welche Rolle spielt der Sturm?",
             "type": "radio",
             "options": [
                 {
-                    "text": "Er ist nur eine atmosphärische Kulisse",
-                    "value": -2
+                    "text": "Er ist nur eine Kulisse",
+                    "value": 0
                 },
                 {
-                    "text": "Er symbolisiert die Macht der Natur über den Menschen",
+                    "text": "Er steht für die zerstörerische Macht der Natur",
                     "value": 4
                 },
                 {
-                    "text": "Er kündigt einen Neubeginn an",
-                    "value": -1
+                    "text": "Er kündigt Hoffnung an",
+                    "value": 1
                 },
                 {
-                    "text": "Er hat keine besondere Bedeutung",
-                    "value": -3
+                    "text": "Er hat keine Bedeutung",
+                    "value": 0
                 }
             ]
         },
         {
-            "text": "Welche Aussage passt am besten zur Aussageabsicht der Ballade?",
+            "text": "Wie wird der technische Fortschritt dargestellt?",
             "type": "radio",
             "options": [
                 {
-                    "text": "Technischer Fortschritt ist unaufhaltsam und immer positiv",
-                    "value": -3
+                    "text": "Als vollkommen sicher",
+                    "value": 0
                 },
                 {
-                    "text": "Der Mensch überschätzt sich gegenüber der Natur",
+                    "text": "Als vom Menschen überschätzt",
                     "value": 4
                 },
                 {
-                    "text": "Unglücke sind reiner Zufall",
+                    "text": "Als unwichtig",
+                    "value": 1
+                },
+                {
+                    "text": "Als naturgegeben",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Personengruppe ist direkt vom Unglück betroffen?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Arbeiter auf der Baustelle",
+                    "value": 1
+                },
+                {
+                    "text": "Passagiere eines Zuges",
+                    "value": 4
+                },
+                {
+                    "text": "Soldaten",
+                    "value": 0
+                },
+                {
+                    "text": "Seefahrer",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Stimmung erzeugt die Ballade überwiegend?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Heiter und fröhlich",
+                    "value": 0
+                },
+                {
+                    "text": "Bedrohlich und unheilvoll",
+                    "value": 4
+                },
+                {
+                    "text": "Romantisch",
+                    "value": 1
+                },
+                {
+                    "text": "Sachlich-neutral",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Themen werden in der Ballade behandelt?",
+            "type": "checkbox",
+            "options": [
+                {
+                    "text": "Macht der Natur",
+                    "value": 2
+                },
+                {
+                    "text": "Menschlicher Fortschrittsglaube",
+                    "value": 2
+                },
+                {
+                    "text": "Zufälliges Glück",
                     "value": -2
                 },
                 {
-                    "text": "Die Natur ist vollständig kontrollierbar",
-                    "value": -3
+                    "text": "Hybris des Menschen",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "text": "Welche Kernaussage lässt sich aus der Ballade ableiten?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Der Mensch kann die Natur vollständig beherrschen",
+                    "value": 0
+                },
+                {
+                    "text": "Technischer Fortschritt hat Grenzen",
+                    "value": 4
+                },
+                {
+                    "text": "Unglücke sind immer vermeidbar",
+                    "value": 1
+                },
+                {
+                    "text": "Natur ist harmlos",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche literarische Epoche wird der Ballade meist zugeordnet?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Romantik",
+                    "value": 1
+                },
+                {
+                    "text": "Realismus",
+                    "value": 4
+                },
+                {
+                    "text": "Expressionismus",
+                    "value": 0
+                },
+                {
+                    "text": "Sturm und Drang",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Warum werden Hexen in der Ballade dargestellt?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Zur historischen Genauigkeit",
+                    "value": 0
+                },
+                {
+                    "text": "Zur Verstärkung der unheilvollen Atmosphäre",
+                    "value": 4
+                },
+                {
+                    "text": "Als Hauptfiguren der Handlung",
+                    "value": 0
+                },
+                {
+                    "text": "Aus humoristischen Gründen",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Erzählperspektive dominiert die Ballade?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Ich-Erzähler",
+                    "value": 0
+                },
+                {
+                    "text": "Allwissender Erzähler",
+                    "value": 4
+                },
+                {
+                    "text": "Dialog ohne Erzähler",
+                    "value": 1
+                },
+                {
+                    "text": "Briefform",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Warnung lässt sich aus der Ballade ableiten?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Vertraue immer der Technik",
+                    "value": 0
+                },
+                {
+                    "text": "Unterschätze niemals die Naturgewalten",
+                    "value": 4
+                },
+                {
+                    "text": "Reisen sind grundsätzlich gefährlich",
+                    "value": 1
+                },
+                {
+                    "text": "Fortschritt sollte vermieden werden",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "text": "Welche Wirkung soll das offene Ende beim Leser erzielen?",
+            "type": "radio",
+            "options": [
+                {
+                    "text": "Erleichterung",
+                    "value": 0
+                },
+                {
+                    "text": "Nachdenklichkeit und Betroffenheit",
+                    "value": 4
+                },
+                {
+                    "text": "Humor",
+                    "value": 0
+                },
+                {
+                    "text": "Spannungsabbau",
+                    "value": 1
                 }
             ]
         },
@@ -96,23 +338,23 @@
     "answers": [
         {
             "percentage": 0,
-            "text": "Sehr schwaches Ergebnis – die Ballade wurde kaum verstanden."
+            "text": "Sehr geringes Textverständnis – zentrale Inhalte fehlen."
         },
         {
             "percentage": 25,
-            "text": "Grundlegendes Verständnis ist vorhanden, aber mit deutlichen Lücken."
+            "text": "Grundverständnis vorhanden, aber mit deutlichen Lücken."
         },
         {
             "percentage": 50,
-            "text": "Solides Textverständnis – die wichtigsten Inhalte wurden erkannt."
+            "text": "Solides Verständnis der Handlung und zentralen Aussagen."
         },
         {
             "percentage": 75,
-            "text": "Gutes Verständnis – auch Deutung und Symbolik sind klar."
+            "text": "Gutes Verständnis – auch Symbolik und Intention wurden erkannt."
         },
         {
             "percentage": 100,
-            "text": "Sehr gut! Du hast Inhalt, Symbolik und Aussage der Ballade sicher verstanden."
+            "text": "Sehr gut! Du hast die Ballade umfassend und differenziert verstanden."
         }
     ],
     "alert": "Bitte beantworte alle Fragen, bevor du dein Ergebnis berechnest."
