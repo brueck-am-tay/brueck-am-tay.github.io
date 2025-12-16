@@ -80,7 +80,7 @@
                 },
                 {
                     "text": "Antike Götter",
-                    "value": -100000
+                    "value": 0
                 },
                 {
                     "text": "Unheimliche Stimmen",
@@ -190,7 +190,7 @@
                 },
                 {
                     "text": "Zufälliges Glück",
-                    "value": -2
+                    "value": 0
                 },
                 {
                     "text": "Hybris des Menschen",
