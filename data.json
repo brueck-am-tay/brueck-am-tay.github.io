@@ -357,5 +357,5 @@
             "text": "Sehr gut! Du hast die Ballade umfassend und differenziert verstanden."
         }
     ],
-    "alert": "Bitte beantworte alle Fragen, bevor du dein Ergebnis berechnest."
+    "alert_message": "Bitte beantworte alle Fragen, bevor du dein Ergebnis berechnest."
 }
