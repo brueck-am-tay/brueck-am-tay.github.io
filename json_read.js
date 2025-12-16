@@ -25,5 +25,5 @@ fetch('data.json')
                 result_button(json.questions[i].text, percentages,json.alert_message)
             }
         }
-    });
+    })
 
